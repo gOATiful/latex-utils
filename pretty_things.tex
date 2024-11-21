@@ -2,6 +2,58 @@
 \usepackage{fontawesome5}
 \usepackage{xcolor}
 
+
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+\newcommand\torge[1]{\textcolor{teal}{\textit{TH says: \uline{#1}}}}
+
+\newcommand{\hardware}[1]{ %
+    \medskip%
+    \noindent\fcolorbox{black}{gray!05}{%
+        \parbox{0.97\linewidth}{% 
+            \textbf{\faBuffer\; Used Hardware:}\\ #1 %
+        }%
+    }%
+    %\medskip%
+}%
+
+\newcommand{\resquestion}[2]{ %
+    \medskip%
+    \noindent\fcolorbox{black}{gray!05}{%
+        \parbox{0.97\linewidth}{% 
+            \textbf{\faSearch\;RQ$_{#1}$.} \textit{#2}
+            %
+        }%
+    }%
+    \medskip%
+}%
+
+\newcommand{\prompt}[2]{ %
+    \medskip%
+    \noindent\fcolorbox{black}{gray!05}{%
+        \parbox{0.97\linewidth}{% 
+            \textbf{\faComment[regular]\;P$_{#1}$.} \textit{#2}
+            %
+        }%
+    }%
+    %\medskip%
+}%
+
+
+\newcommand{\summary}[2]{ %
+    \medskip%
+    \noindent\fcolorbox{black}{gray!05}{%
+        \parbox{0.97\linewidth}{% 
+            \textbf{\faThumbtack\;#1.} #2 %
+        }%
+    }%
+    %\medskip%
+}%
+
+\newcommand{\rqq}[1]{RQ$_{#1}$}
+
+
 \newcommand{\hardware}[1]{ %
     \medskip%
     \noindent\fcolorbox{black}{gray!05}{%
